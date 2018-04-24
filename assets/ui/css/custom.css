@@ -1,0 +1,385 @@
+#tablestrip{
+    margin-top: 0px;
+    margin-bottom: 48px;
+    width: 100%;
+}
+
+#tablestrip thead th{
+    padding: 10px 10px;
+    background-color: #065139;
+    color: #fff;
+}
+
+#tablestrip tbody td{
+    text-transform: lowercase;
+    vertical-align: middle;
+}
+#tablestrip tbody td.center{
+    text-align: center;
+}
+
+#tablestrip tfoot td{
+    border-top: solid 2px #172e24;
+}
+
+#tablestrip tr:nth-child(even) {background: #e3e5e4}
+#tablestrip tr:nth-child(odd) {background: #FFF}
+
+#tablestrip tr:nth-child(even):hover {background: #d2d3d3 !important}
+#tablestrip tr:nth-child(odd):hover {background: #d2d3d3 !important}
+
+#tablestrip tr:hover{
+    cursor: pointer;
+}
+
+
+/*pagination*/
+.justify-content-end{
+    float: right;
+}
+
+#custom-search-input{
+    padding: 0px;
+    border: solid 1px #E4E4E4;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-top: 6px;
+}
+
+#custom-search-input a{
+    text-decoration: none;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+
+.leftof{
+    text-align: left;
+    padding-top: 8px !important;
+}
+
+/*dropdown*/
+ul ul:before{
+    background: none !important;
+}
+
+.dropdown-menu .divider{
+    background-color: #c2c2c2 !important;
+}
+
+.caret{
+    margin-left: 5px;
+}
+
+.yamm .dropdown-menu{
+    margin-left: 0px;
+}
+
+/*.navbar-nav{
+    margin-right: 30px !important;
+}*/
+
+.navbar-nav>li>a{
+   /* line-height: 30px;*/
+}
+
+.navbar-default{
+    margin-top: 0px;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover{
+    background: none;
+    color:#efc94c !important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background: #056949 !important;
+    color: #fff !important;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #fff !important;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: #fff !important;
+     background: #056949 !important;
+}
+
+.mega-menu{
+    border:none;
+    border-top: 3px solid #056949;
+    border-radius:0;
+    z-index: -999;
+}
+
+.mega-menu li a{
+    text-decoration: none;
+    color: #262626;      
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.mega-menu li a:hover{
+    background: #056949; 
+    color:#fff;
+    width: 100%;
+}
+
+.navbar-nav>li>.dropdown-menu{
+    background: #fff;
+    z-index: 9999999;
+}
+
+/*.yamm .dropdown.yamm-fw .dropdown-menu{
+    margin-left: 15px;
+    margin-right: 15px;
+}*/
+
+
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100% !important;margin-top:-6px;margin-left:-1px;border-radius: 0px !important; background: #fff;}
+.dropdown-submenu:hover>.dropdown-menu{display:block; color:#fff 1important;}
+/*
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#333;margin-top:5px;margin-right:0px;}
+*/
+.dropdown-submenu:hover>a:after{border-left-color:#fff;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100% !important;margin-left:10px;}
+.dropdown-submenu ul.dropdown-menu.kiri{float:none;top:0;left: -100% !important; right:auto; clear:both; margin-top:-6px;margin-left:0px;border-radius: 0px !important; background: #fff;width: 100% !important}
+.dropdown-submenu ul.dropdown-menu.kiri ul.dropdown-menu.kiri{background:#fff !important;margin-left: 0px; width: 100%;}
+
+.dropdown-submenu .caret-right, .dropdown-submenu .dropdown-menu .dropdown-submenu .caret-right {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 5px solid;
+    display: inline-block;
+    height: 0;
+    vertical-align: top;
+    width: 0;
+    float: right;
+    right: 0;
+    position: relative;
+    margin-bottom: -24px;
+    margin-top: 10px;
+    z-index: 99999999;
+    margin-right: 10px;
+    color: #056949;
+}
+
+.dropdown-submenu:hover i, .dropdown-submenu .dropdown-menu .dropdown-submenu:hover:hover i {
+    color:#ccc;
+}
+
+.mega-menu li a{
+    padding-right: 15px;
+}
+
+
+/*breadcrumbs*/
+.breadcrumb-arrow {
+    height: 36px;
+    padding: 0;
+    line-height: 36px;
+    list-style: none;
+    background-color: #e6e9ed
+}
+.breadcrumb-arrow li:first-child a {
+    border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px
+}
+.breadcrumb-arrow li, .breadcrumb-arrow li a, .breadcrumb-arrow li span {
+    display: inline-block;
+    vertical-align: top
+}
+.breadcrumb-arrow li:not(:first-child) {
+    margin-left: -5px
+}
+.breadcrumb-arrow li+li:before {
+    padding: 0;
+    content: ""
+}
+.breadcrumb-arrow li span {
+    padding: 0 10px
+}
+.breadcrumb-arrow li a, .breadcrumb-arrow li:not(:first-child) span {
+    height: 36px;
+    padding: 0 10px 0 25px;
+    line-height: 36px
+}
+.breadcrumb-arrow li:first-child a {
+    padding: 0 10px
+}
+.breadcrumb-arrow li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    background-color: #065139;
+    border: 1px solid #065139
+}
+.breadcrumb-arrow li:first-child a {
+    padding-left: 10px
+}
+.breadcrumb-arrow li a:after, .breadcrumb-arrow li a:before {
+    position: absolute;
+    top: -1px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent
+}
+.breadcrumb-arrow li a:before {
+    right: -10px;
+    z-index: 3;
+    border-left-color: #065139;
+    border-left-style: solid;
+    border-left-width: 11px
+}
+.breadcrumb-arrow li a:after {
+    right: -11px;
+    z-index: 2;
+    border-left: 11px solid #ccc
+}
+.breadcrumb-arrow li a:focus, .breadcrumb-arrow li a:hover {
+    background-color: #056949;
+    border: 1px solid #056949
+}
+.breadcrumb-arrow li a:focus:before, .breadcrumb-arrow li a:hover:before {
+    border-left-color: #056949
+}
+.breadcrumb-arrow li a:active {
+    background-color: #2494be;
+    border: 1px solid #2494be
+}
+.breadcrumb-arrow li a:active:after, .breadcrumb-arrow li a:active:before {
+    border-left-color: #2494be
+}
+.breadcrumb-arrow li span {
+    color: #434a54
+}
+
+
+/*panel*/
+.panel-default{
+     border-color: #065139;
+}
+
+.panel{
+     border: 1px solid #065139;
+    border-radius: 0;
+}
+.panel-default>.panel-heading{
+    background-color: #065139 !important;
+    border-color: #065139;
+    border-radius: 0;
+    color: #fff;
+}
+
+.loginform{
+    margin: 5% 25%;
+}
+
+.userlogin{
+    margin-top: 25px;
+    float:right;
+    margin-bottom: 12px;
+    
+}
+
+.userlogin img{
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;    
+    float:left;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.userlogin .dsc{
+    float: left;
+    margin-top: 3px;
+}
+
+.userlogin p{ 
+    font-size: 12px;
+    line-height: 1.2 !important;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.userlogin p i{
+    font-size: 10px;
+    font-weight: 100;
+}
+
+
+.list-form{
+    height: auto;
+    margin-top: 20px;
+    margin-right:10px;
+    clear: both;
+        
+}
+
+/*modal*/
+
+.modal-header {
+    background: #065139;
+    color: #fff;
+    vertical-align: middle !important;
+    display: inline-flex;
+    width: 100%;
+}
+
+.modal-header .close{
+    color: #fff !important;
+}
+
+.modal-header h5.modal-title{
+    font-size: 18px;
+    font-weight: 700;    
+    margin-right: 60px;
+    float: left;
+    width: 100%;
+}
+
+button.close span {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.modal-body{
+    padding: 15px 0px;
+}
+
+.modal-dialog-centered{
+    vertical-align: middle;
+}

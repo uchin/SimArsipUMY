@@ -1,0 +1,231 @@
+a.nav-expander {
+  background: none repeat scroll 0 0 transparent;
+  color: #FFFFFF;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  height: 60px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  left: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 45;
+  transition: right 0.3s ease-in-out 0s;
+  width: 40px;
+  z-index: 12;
+ 
+  transition: left 0.3s ease-in-out 0s;
+  -webkit-transition: left 0.3s ease-in-out 0s;
+  -moz-transition: left 0.3s ease-in-out 0s;
+  -o-transition: left 0.3s ease-in-out 0s;
+ 
+}
+ 
+a.nav-expander:hover {
+  cursor: pointer;
+}
+ 
+a.nav-expander.fixed {
+  position: fixed;
+}
+ 
+.nav-expanded a.nav-expander.fixed {
+    left: 10em;
+}
+
+
+nav.master {
+  background: #E8EAF6;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  left: -100%;
+  font-size: 15px;
+  top: 0;
+  width: 100%;
+    max-width: 23em;
+  z-index: 999999999;
+    border-right: 1px solid #c2c2c2;
+
+  transition: left 0.3s ease-in-out 0s;
+  -webkit-transition: left 0.3s ease-in-out 0s;
+  -moz-transition: left 0.3s ease-in-out 0s;
+  -o-transition: left 0.3s ease-in-out 0s;
+
+}
+
+
+.nav-expanded nav.master {
+  left: 0;
+}
+
+body.nav-expanded {
+  margin-left: 0em;
+  transition: left 0.4s ease-in-out 0s;
+  -webkit-transition: left 0.4s ease-in-out 0s;
+  -moz-transition: left 0.4s ease-in-out 0s;
+  -o-transition: left 0.4s ease-in-out 0s;
+}
+
+#nav-close {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.main-menu {
+  padding-top: 0px;
+}
+
+.main-menu li {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin-left: 0px;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.main-menu li:hover{    
+    background: #fff;
+}
+
+
+.main-menu li a {
+  color: #333;
+  text-decoration: none;    
+    width: 100%;
+    display: block;
+}
+
+.main-menu li a:hover {
+  color: #000;
+}
+
+.main-menu li.title-master a {
+  color: #fff;
+  text-decoration: none;    
+    width: 20px;
+    display:inline-block;
+}
+
+.main-menu li.title-master a:hover{
+    background: none;
+    color: grey;
+}
+
+.main-menu li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.main-menu li .sub-nav {
+  border-bottom: 0px;
+  padding: 8px;
+}
+
+.main-menu li.open ul{
+  margin-top: 6px;
+}
+
+.main-menu li.open ul li{
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.main-menu li.open ul li:last-child{
+    border-bottom: 0;
+    padding-bottom: 0px;
+}
+
+.main-menu a .caret {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	vertical-align: top;
+	border-top: 4px solid #333;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.main-menu a:hover .caret {
+	border-top-color: #333;
+}
+
+.main-menu li.open > a > .caret {
+	border-top: none;
+	border-bottom: 4px solid #333;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+.main-menu li.open > a:hover > .caret {
+	border-bottom-color: #333
+}
+
+.main-menu li > a > span.icon {
+  float: right;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.main-menu li > a:hover > span.icon {
+  float: right;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+
+.main-menu li.title-master{
+    color: #333;    
+    font-size: 18px;
+    background: #3F51B5;
+}
+
+.main-menu li{
+    font-size: 14px;
+}
+
+.main-menu li.title-master{
+    border:none;
+}
+
+.main-menu li.titlesm{
+    background: #5C6BC0;
+    color: #fff;
+}
+
+.main-menu li.userblock{
+    background: #3F51B5;
+    height: 170px;
+    color: #fff;
+}
+
+.main-menu li.userblock img{
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 60px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.main-menu li.userblock p{
+    margin: 0;
+    padding: 0
+}
+
+.main-menu li.userblock p.utitle{
+    font-weight: 700;
+}
+
+.main-menu li.userblock p.udetil{
+    font-size: 12px;
+}
